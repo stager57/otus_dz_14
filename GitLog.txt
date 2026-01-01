@@ -1,0 +1,16 @@
+Artem@SEVER MINGW64 /s/Git/otus_dz_14 (master)
+$ git log
+commit 9f657303e5a32642a7ced634a576501fbf650900 (HEAD -> master, stager57otus_dz_14/master, stager57otus_dz_14/feature/orders, feature/orders)
+Author: Stager57 <stager57@mail.ru>
+Date:   Thu Jan 1 13:22:00 2026 +0300
+
+    Добавлен справочник СтатусыЗаказов
+
+commit 768233af2aea46eade2223648bd9b7f36eb09633
+Author: Stager57 <stager57@mail.ru>
+Date:   Thu Jan 1 13:04:11 2026 +0300
+
+    Создание репазитория.
+
+Artem@SEVER MINGW64 /s/Git/otus_dz_14 (master)
+$
