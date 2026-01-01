@@ -9,11 +9,15 @@
 		<Metadata name="Catalog.Организации" id="2dbf099a-bf0c-4b54-bbe5-b2c2e3c0e916" configVersion="be28dc4c4622b047aefc9875c067664600000000"/>
 		<Metadata name="Catalog.Справочник1" id="834c2b15-0d28-4d03-a687-d1d1b209b991" configVersion="e65abaf41331994fbf29ea2a4e1db86000000000"/>
 		<Metadata name="Catalog.Справочник2" id="0c8f5242-7b45-4128-83da-1485d83a0641" configVersion="c7ffabaabfcee34da969a89a84b035ce00000000"/>
+		<Metadata name="Catalog.СтатусыЗаказов" id="31c594e2-c1c6-4dd9-89bf-532bb789070d" configVersion="5fc4db8ecc6aca4baae170231761cb9e00000000">
+			<Metadata name="Catalog.СтатусыЗаказов.Attribute.Заказ" id="1e7fc0ce-737b-41d1-95c0-fb29c18af200"/>
+			<Metadata name="Catalog.СтатусыЗаказов.Attribute.Статус" id="a3dcaa01-6fe9-42fc-8f2c-a0b9c9618e85"/>
+		</Metadata>
 		<Metadata name="CommonModule.ОбщийМодульВебСервисы" id="8e000329-4d6b-4f97-a1a2-4a756312c043" configVersion="652a11470adc234a88d082ea0d3e70b300000000"/>
 		<Metadata name="CommonModule.ОбщийМодульВебСервисы.Module" id="8e000329-4d6b-4f97-a1a2-4a756312c043.0" configVersion="aa2c08b54f48e9479b7950c5f5c7571500000000"/>
 		<Metadata name="CommonModule.ОбщийМодульПодпискиНаСобытия" id="e12bb3ba-b593-467f-b24b-003a42386236" configVersion="a8161564b907964893c397a8ff38e53d00000000"/>
 		<Metadata name="CommonModule.ОбщийМодульПодпискиНаСобытия.Module" id="e12bb3ba-b593-467f-b24b-003a42386236.0" configVersion="50efde7ba56f6a44bd22f91df83cfed500000000"/>
-		<Metadata name="Configuration.Конфигурация" id="68bee1c1-9d8e-42bb-a8cc-388cc7ea955e" configVersion="ceb4d9768d754f4d93dbaae077f5cf4d00000000"/>
+		<Metadata name="Configuration.Конфигурация" id="68bee1c1-9d8e-42bb-a8cc-388cc7ea955e" configVersion="0b3be251f8a45a4a9bac644dfe4ebf2600000000"/>
 		<Metadata name="DataProcessor.ДЗ11" id="e31e7fe7-939b-4f0e-a698-593a8769d25d" configVersion="3c2cc2c633344e4080c1110b37e56ea500000000"/>
 		<Metadata name="DataProcessor.ДЗ11.Form.Форма" id="e16b9eaf-cfa2-46bf-abb2-5e67eae58ae9" configVersion="e1f0c395953af5429a9960cb22f5ea5300000000"/>
 		<Metadata name="DataProcessor.ДЗ11.Form.Форма.Form" id="e16b9eaf-cfa2-46bf-abb2-5e67eae58ae9.0" configVersion="979eeae7dee4724da3fe6d0af30d256e00000000"/>
@@ -38,7 +42,7 @@
 		<Metadata name="Language.Русский" id="1249dbd3-427e-4d4b-ac56-928a0987a405" configVersion="542af7af4d4d054da0dea3a54c8fc13700000000"/>
 		<Metadata name="Role.ПолныеПрава" id="ac59cda2-5bd7-433b-91e2-b8c208d19af5" configVersion="f950fa6f1251214fb1631e0c4cf15a4000000000"/>
 		<Metadata name="Role.ПолныеПрава.Rights" id="ac59cda2-5bd7-433b-91e2-b8c208d19af5.0" configVersion="c78d6cefe907984cb0c88997989dee4000000000"/>
-		<Metadata name="Subsystem.ДЗ" id="4f798eb4-0483-484d-95a3-b20f126d3e48" configVersion="36e906d211eeaf45ab7420f4c96e076600000000"/>
+		<Metadata name="Subsystem.ДЗ" id="4f798eb4-0483-484d-95a3-b20f126d3e48" configVersion="319f95d0488d4746aed5cee3368e255400000000"/>
 		<Metadata name="WSReference.Dz11" id="62529fee-a462-4a04-bfb3-6aee2d1d1533" configVersion="55784dede0a17e48874cf59d3a9a7d2a00000000"/>
 		<Metadata name="WSReference.Dz11.WSDefinition" id="62529fee-a462-4a04-bfb3-6aee2d1d1533.0" configVersion="bdd0f0a5a153374da88f30bab3d2cb4800000000"/>
 		<Metadata name="WebService.dz11" id="3cb8c082-17c5-4a72-8e18-539e57c22deb" configVersion="6730d6c55baf6d419706ba2e69be994200000000">

@@ -26,7 +26,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыЗаказов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">WebService.dz11</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ДЗ11</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">56c8fb4c-7fec-4273-bde3-c7903c7a8361</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СтатусыЗаказов</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

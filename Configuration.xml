@@ -257,6 +257,7 @@
 			<Catalog>Справочник1</Catalog>
 			<Catalog>Справочник2</Catalog>
 			<Catalog>Заказы</Catalog>
+			<Catalog>СтатусыЗаказов</Catalog>
 			<Document>Документ1</Document>
 			<Document>Документ2</Document>
 			<Enum>СтатусыЗаказов</Enum>
