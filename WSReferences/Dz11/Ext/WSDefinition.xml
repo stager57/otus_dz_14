@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap12bind="http://schemas.xmlsoap.org/wsdl/soap12/"
+		xmlns:soapbind="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:tns="http://www.1c.ru/SSL/Exchange"
+		xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"
+		xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:xsd1="http://www.1c.ru/SSL/Exchange"
+		name="dz11"
+		targetNamespace="http://www.1c.ru/SSL/Exchange">
+	<types>
+		<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+				xmlns:xs1="http://www.1c.ru/SSL/Exchange"
+				targetNamespace="http://www.1c.ru/SSL/Exchange"
+				elementFormDefault="qualified">
+			<xs:element name="GetData">
+				<xs:complexType>
+					<xs:sequence/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetDataResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:schema>
+	</types>
+	<message name="GetDataRequestMessage">
+		<part name="parameters"
+				element="tns:GetData"/>
+	</message>
+	<message name="GetDataResponseMessage">
+		<part name="parameters"
+				element="tns:GetDataResponse"/>
+	</message>
+	<portType name="dz11PortType">
+		<operation name="GetData">
+			<input name="GetDataRequest"
+					message="tns:GetDataRequestMessage"/>
+			<output name="GetDataResponse"
+					message="tns:GetDataResponseMessage"/>
+		</operation>
+	</portType>
+	<binding name="dz11SoapBinding"
+			type="tns:dz11PortType">
+		<soapbind:binding style="document"
+				transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="GetData">
+			<soapbind:operation style="document"
+					soapAction="http://www.1c.ru/SSL/Exchange#dz11:GetData"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+	</binding>
+	<binding name="dz11Soap12Binding"
+			type="tns:dz11PortType">
+		<soap12bind:binding style="document"
+				transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="GetData">
+			<soap12bind:operation style="document"
+					soapAction="http://www.1c.ru/SSL/Exchange#dz11:GetData"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+	</binding>
+	<service name="dz11">
+		<port name="dz11Soap"
+				binding="tns:dz11SoapBinding">
+			<documentation> 
+				<wsi:Claim xmlns:wsi="http://ws-i.org/schemas/conformanceClaim/"
+						conformsTo="http://ws-i.org/profiles/basic/1.1"/>
+			</documentation>
+			<soapbind:address location="https://sever/otus/ws/dz11.1cws"/>
+		</port>
+		<port name="dz11Soap12"
+				binding="tns:dz11Soap12Binding">
+			<soap12bind:address location="https://sever/otus/ws/dz11.1cws"/>
+		</port>
+	</service>
+</definitions>
